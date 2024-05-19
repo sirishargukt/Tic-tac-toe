@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="ttt.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Game</title>
+    <style>
+        table td {
+            height: 150px;
+            width: 150px;
+            text-align: center;
+            font-size: 100px;
+            border: 5px solid black;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+        }
+        .strike {
+            text-decoration: line-through;
+            color: red;
+        }
+        .btn-custom {
+            background-color: #007bff; 
+            border-color: #007bff;
+            color: white;
+            font-size: 1.25rem; 
+            padding: 10px 20px; 
+            border-radius: 10px; 
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3; 
+            transform: scale(1.05); 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Tic - Tac - Toe </h2>
+        <button id="b" class="btn btn-primary btn-sm">Restart Game</button><br><br>
+        <table>
+            <tr>
+                <td id="one"></td>
+                <td id="two"></td>
+                <td id="three"></td>
+            </tr>
+            <tr>
+                <td id="four"></td>
+                <td id="five"></td>
+                <td id="six"></td>
+            </tr>
+            <tr>
+                <td id="seven"></td>
+                <td id="eight"></td>
+                <td id="nine"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="ttt.js"></script>
+</body>
+</html>
